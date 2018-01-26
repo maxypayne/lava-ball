@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  margin: 40px auto 20px;
+  border: 1px solid #333;
+
+  -webkit-box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.8);
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: #777;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info {
+  margin: 14px auto;
+  text-align: justify;
+  font-size: 18px;
+  color: #999;
+}
+
+label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #555;
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  margin: 40px auto 20px;
+  border: 1px solid #333;
+
+  -webkit-box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.8);
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: #777;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info {
+  margin: 14px auto;
+  text-align: justify;
+  font-size: 18px;
+  color: #999;
+}
+
+label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #555;
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+/**
+ * Setup
+ */
+* {
+  margin: 0;
+  font-family: verdana;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  line-height: 30px;
+  opacity: 0.6;
+  padding: 20px;
+}
+footer a {
+  color: #fff;
+}
+
+/**
+	 * Ball animation
+	 */
+.ball-wrap {
+  /* positioning */
+  padding-top: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  height: 50px;
+
+  /* animation */
+  animation-name: ball-bouncing;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+
+.ball-wrap span {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #eca60e;
+  display: block;
+
+  animation-name: ball-deform;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+
+@keyframes ball-bouncing {
+  0% {
+    transform: translateY(550%);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(0%);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0%);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes ball-deform {
+  0% {
+    height: 20px;
+    width: 60px;
+  }
+  5% {
+    height: 50px;
+    width: 50px;
+  }
+  100% {
+    height: 50px;
+    width: 50px;
+  }
+}
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #01263b;
+
+  height: 100%;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  padding: 80px;
+
+  margin-top: 450px;
+  margin-left: 500px;
+  background: #011b2c;
+  color: white;
+  font-size: 40px;
+  border-radius: 150px 0 150px 0;
+  cursor: pointer;
+  width: 430px;
+  border: 3px solid white;
+}
+.close:focus {
+  outline: none;
+  border: none;
+}
